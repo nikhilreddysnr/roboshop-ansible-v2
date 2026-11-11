@@ -50,8 +50,8 @@
   - name: "Delete R53 Records"
     amazon.aws.route53:
       state: absent
-      zone: "{{domain}}"
-      record: "{{item}}.{domain}"
+      zone: "{{ domain }}"
+      record: "{{ item }}.{{ domain }}"
       ttl: 1
       type: A
     loop: "{{instances}}"
