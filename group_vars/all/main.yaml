@@ -5,3 +5,14 @@ ansible_password: "{{ vault_ansible_password }}"
 mysql_root_password: "{{ vault_mysql_root_password }}"
 rabbitmq_user: "{{ vault_rabbitmq_user }}"
 rabbitmq_password: "{{ vault_rabbitmq_password }}"
+
+
+mongodb_host: mongodb.nikhil92s.store
+redis_host: redis.nikhil92s.store
+mysql_host: mysql.nikhil92s.store
+rabbitmq_host: rabbitmq.nikhil92s.store
+catalogue_host: catalogue.nikhil92s.store
+user_host: user.nikhil92s.store
+cart_host: cart.nikhil92s.store
+shipping_host: shipping.nikhil92s.store
+payment_host: payment.nikhil92s.store
