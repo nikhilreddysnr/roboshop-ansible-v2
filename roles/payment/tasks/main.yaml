@@ -1,0 +1,19 @@
+- name: AppSetup for {{ component }}
+  include_role:
+    name: common
+    tasks_from: app-setup
+
+- name: Python Setup for {{ component }}
+  include_role:
+    name: common
+    tasks_from: python
+
+- name: Service Setup for {{ component }}
+  include_role:
+    name: common
+    tasks_from: systemd-setup
+
+- name: restart for {{ component }}
+  include_role:
+    name: common
+    tasks_from: restart
