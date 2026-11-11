@@ -37,6 +37,7 @@
   shell: mongosh --host "{{ mongodb_host }}" < /app/db/master-data.js
   when: product_count.stdout | int == 0
 
-.include_role:
+- name: restart for {{ component }}
+  include_role:
     name: common
     tasks_from: restart
