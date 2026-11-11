@@ -1,3 +1,0 @@
-- name: Printing Random Information
-  debug: 
-    msg: "Hi Hello How are You!!"
