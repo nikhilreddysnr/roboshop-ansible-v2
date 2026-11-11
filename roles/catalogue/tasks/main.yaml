@@ -3,7 +3,6 @@
     name: common
     tasks_from: app-setup
 
-
 - name: Nodejs for {{ component }}
   include_role:
     name: common
